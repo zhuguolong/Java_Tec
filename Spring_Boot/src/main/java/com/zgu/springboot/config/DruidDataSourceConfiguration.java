@@ -110,6 +110,7 @@ public class DruidDataSourceConfiguration {
     }
 
     @Bean
+    @SuppressWarnings("unchecked")
     public ServletRegistrationBean statViewServlet() {
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         // IP白名单
@@ -125,6 +126,7 @@ public class DruidDataSourceConfiguration {
     }
 
     @Bean
+    @SuppressWarnings("unchecked")
     public FilterRegistrationBean statFilter() {
         // 创建过滤器
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new WebStatFilter());
