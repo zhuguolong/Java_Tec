@@ -50,7 +50,7 @@ public class CurrentLimiter {
                     StringBuilder builder = new StringBuilder("The request [")
                             .append(urlPath).append("] exceeds maximum traffic limit, the limit is ")
                             .append(limitRule.getMaxConcurrent())
-                            .append(", available permit is")
+                            .append(", available permit is ")
                             .append(acquireResult.getAvailablePermits())
                             .append(".");
 
