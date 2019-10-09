@@ -47,7 +47,6 @@ public class LimitRule {
                 } else {
                     acquireResult.setResult(AcquireResult.ACQUIRE_FAILED);
                 }
-                print(urlPath);
             } else {
                 acquireResult.setResult(AcquireResult.ACQUIRE_NONEED);
             }
