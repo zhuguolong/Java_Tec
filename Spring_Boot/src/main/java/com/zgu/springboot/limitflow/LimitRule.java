@@ -39,7 +39,7 @@ public class LimitRule {
         acquireResult.setAvailablePermits(this.sema.availablePermits());
 
         try {
-            if (Pattern.matches(pattern, urlPath)) {
+            if (urlPath.contains(pattern)) {
                 boolean acquire = this.sema.tryAcquire(50, TimeUnit.MILLISECONDS);
                 if (acquire) {
                     acquireResult.setResult(AcquireResult.ACQUIRE_SUCCESS);

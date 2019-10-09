@@ -14,7 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 @Aspect
 @Component
 public class CurrentLimiteAspect {
-    @Pointcut("execution(* com.zgu.springboot.controller..*(..))")
+    /**
+     * 匹配所有以 Controller 类中的方法
+     */
+    @Pointcut("execution(* com.zgu.springboot..*Controller.*(..))")
     public void controller() {}
 
     @Before("controller()")

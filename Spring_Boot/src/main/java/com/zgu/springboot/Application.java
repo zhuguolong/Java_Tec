@@ -15,7 +15,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 
 		// 限流规则
-		LimitRule limitRule = new LimitRule("/limit", 4);
+		LimitRule limitRule = new LimitRule("/zgu", 4);
 		CurrentLimiter.addRule(limitRule);
 	}
 
