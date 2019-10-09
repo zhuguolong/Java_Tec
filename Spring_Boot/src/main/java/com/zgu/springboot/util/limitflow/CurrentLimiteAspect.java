@@ -1,4 +1,4 @@
-package com.zgu.springboot.limitflow;
+package com.zgu.springboot.util.limitflow;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;

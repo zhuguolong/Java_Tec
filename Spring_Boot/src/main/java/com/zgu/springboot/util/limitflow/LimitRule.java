@@ -1,10 +1,9 @@
-package com.zgu.springboot.limitflow;
+package com.zgu.springboot.util.limitflow;
 
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
 
 /**
  * 限流规则

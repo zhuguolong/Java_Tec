@@ -1,4 +1,4 @@
-package com.zgu.springboot.limitflow;
+package com.zgu.springboot.util.limitflow;
 
 /**
  * 获取流量通信证的结果，结果有3种：获取成功，获取失败，不需要获取
